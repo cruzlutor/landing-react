@@ -1,4 +1,4 @@
-Aydoor project landing
+React landing example
 ==========
 
 * react
