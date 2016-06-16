@@ -28,8 +28,8 @@ class Nav extends React.Component{
         return (
             <nav className={classes}>
                 <div className="main-nav__item pull-left"><Link className="main-nav__logo" to={this.state.initial}></Link></div>
-                <div className="main-nav__item pull-right is-desktop"><Link className="main-nav__link" to={this.state.initial + 'signin'}>Iniciar sesión</Link></div>
-                <div className="main-nav__item pull-right is-desktop"><Link className="main-nav__link" to={this.state.initial + 'signup'}>Registro</Link></div>
+                <div className="main-nav__item pull-right is-desktop"><Link className="main-nav__link" to={'signin'}>Iniciar sesión</Link></div>
+                <div className="main-nav__item pull-right is-desktop"><Link className="main-nav__link" to={'signup'}>Registro</Link></div>
                 <div className="main-nav__item pull-right is-desktop"><Link className="main-nav__link" to={this.state.initial}>Inicio</Link></div>
 
                 <div className="main-nav__item pull-right is-mobile"><a className="main-nav__link main-nav__burguer" href="#"><i className="fa fa-bars"></i></a></div>
