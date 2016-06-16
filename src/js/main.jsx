@@ -10,10 +10,11 @@ import Home from './components/Home';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 
+console.log(window.location.pathname);
 class Main extends React.Component{
     render(){
         return (
-            <Router path={window.location.pathname} history={history} >
+            <Router path="landing-react/src/" history={history} >
                 <Route path="/" component={App} >
                     <IndexRoute component={Home} />
                     <Route path="/search" component={Search} />
