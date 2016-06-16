@@ -15,7 +15,7 @@ class Main extends React.Component{
     render(){
         return (
             <Router history={history} >
-                <Route path="landing-react/src/" component={App} >
+                <Route path="{window.location.pathname}" component={App} >
                     <IndexRoute component={Home} />
                     <Route path="/search" component={Search} />
                     <Route path="/signin" component={Signin} />
