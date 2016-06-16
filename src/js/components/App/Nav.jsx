@@ -9,13 +9,13 @@ class Nav extends React.Component{
 
     constructor(props, context){
         super(props, context);
-        this.state = {positive: false};
+        this.state = {positive: false, initial: window.location.pathname };
     }
 
     componentDidMount(){
         history.listen( (nextState) => {
             this.setState(
-                {positive: (nextState.pathname != '/') }
+                {positive: (nextState.pathname != this.state.initial) }
             );
         });
     }
